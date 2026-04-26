@@ -3,55 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabrik</title>
-    <style>
-        body {
-            /* Rasm har doim butun ekranni qoplaydi */
-            background-image: url("1.png"); 
-            background-repeat: no-repeat;
-            background-size: cover; /* Bu telefonda ham rasmning to'liq chiqishini ta'minlaydi */
-            background-attachment: fixed;
-            background-position: center;
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .btn-bottom-right {
-            position: fixed;
-            /* Telefonda oson bosilishi uchun joylashuvni o'zgartirdik */
-            bottom: 30px;
-            right: 30px; 
-            padding: 12px 25px;
-            cursor: pointer;
-            background-color: #4b0505;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-            z-index: 1000;
-        }
-
-        /* TELEFON UCHUN MAXSUS MOSLASH (Media Query) */
-        @media (max-width: 600px) {
-            .btn-bottom-right {
-                right: 20px; /* Telefon chekkasiga yaqinroq */
-                bottom: 20px;
-                width: calc(100% - 40px); /* Tugma telefon eni bo'ylab cho'ziladi */
-                text-align: center;
-            }
-            body {
-                background-size: cover; /* Rasm telefonda cho'zilib ketmaydi */
-            }
-        }
-    </style>
+    <title>tabrik</title>
 </head>
+<style>
+    body {
+        /* Rasm nomi nuqtasi bilan, imlo xatolarisiz */
+        background-image: url("1.png");
+        background-repeat: no-repeat;
+        background-size: 637px;
+        background-attachment: fixed;
+        background-position: center;
+        margin: 0;
+    }
+    .btn-bottom-right {
+        position: fixed;
+        bottom: 140px; 
+        right: 350px;  
+        padding: 10px 20px;
+        cursor: pointer;
+        background-color: #4b0505;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+</style>
 <body>
 
-    <button class="btn-bottom-right" onclick="location.href='project2.html'">
+    <button class="btn-bottom-right" onclick="window.location.href='project2.html'">
         keyingisi
     </button>
 
